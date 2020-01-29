@@ -1,0 +1,52 @@
+const WX_CONFIG = {
+  appId: '',
+  timestamp: '',
+  nonceStr: 'Hello BalmJS',
+  signature: ''
+};
+
+wx.config({
+  debug: false,
+  appId: WX_CONFIG.appId,
+  timestamp: WX_CONFIG.timestamp,
+  nonceStr: WX_CONFIG.nonceStr,
+  signature: WX_CONFIG.signature,
+  jsApiList: [
+    'checkJsApi',
+    'onMenuShareTimeline',
+    'onMenuShareAppMessage',
+    'onMenuShareQQ',
+    'onMenuShareWeibo',
+    'onMenuShareQZone',
+    'hideMenuItems',
+    'showMenuItems',
+    'hideAllNonBaseMenuItem',
+    'showAllNonBaseMenuItem',
+    'translateVoice',
+    'startRecord',
+    'stopRecord',
+    'onVoiceRecordEnd',
+    'playVoice',
+    'onVoicePlayEnd',
+    'pauseVoice',
+    'stopVoice',
+    'uploadVoice',
+    'downloadVoice',
+    'chooseImage',
+    'previewImage',
+    'uploadImage',
+    'downloadImage',
+    'getNetworkType',
+    'openLocation',
+    'getLocation',
+    'hideOptionMenu',
+    'showOptionMenu',
+    'closeWindow',
+    'scanQRCode',
+    'chooseWXPay',
+    'openProductSpecificView',
+    'addCard',
+    'chooseCard',
+    'openCard'
+  ]
+});
