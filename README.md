@@ -1,12 +1,12 @@
-# BalmJS template - wechat-mp
+# BalmJS template - wechat
 
-> A simple project for WeChat Media Platform
+> A simple project for WeChat
 
 ## Installation
 
 ```sh
 npm i -g balm-cli
-balm init wechat-mp my-project
+balm init wechat my-project
 
 cd my-project
 yarn
