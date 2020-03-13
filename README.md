@@ -1,4 +1,4 @@
-# BalmJS template - wechat
+# BalmJS template - `wechat`
 
 > A simple project for WeChat
 
@@ -24,4 +24,4 @@ npm run dev
 npm run prod
 ```
 
-> thx [BalmJS](https://balmjs.com/)
+- thx [BalmJS](https://balmjs.com/)
