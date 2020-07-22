@@ -12,4 +12,4 @@ wx.ready(() => {
   });
 });
 
-wx.error(err => alert(err));
+wx.error((err) => alert(err));

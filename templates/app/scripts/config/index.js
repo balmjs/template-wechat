@@ -1,52 +1,12 @@
+import jsApiList from '@/config/wx-api';
+
 const WX_CONFIG = {
+  debug: false,
   appId: '',
   timestamp: '',
-  nonceStr: 'Hello BalmJS',
-  signature: ''
+  nonceStr: '',
+  signature: '',
+  jsApiList
 };
 
-wx.config({
-  debug: false,
-  appId: WX_CONFIG.appId,
-  timestamp: WX_CONFIG.timestamp,
-  nonceStr: WX_CONFIG.nonceStr,
-  signature: WX_CONFIG.signature,
-  jsApiList: [
-    'checkJsApi',
-    'onMenuShareTimeline',
-    'onMenuShareAppMessage',
-    'onMenuShareQQ',
-    'onMenuShareWeibo',
-    'onMenuShareQZone',
-    'hideMenuItems',
-    'showMenuItems',
-    'hideAllNonBaseMenuItem',
-    'showAllNonBaseMenuItem',
-    'translateVoice',
-    'startRecord',
-    'stopRecord',
-    'onVoiceRecordEnd',
-    'playVoice',
-    'onVoicePlayEnd',
-    'pauseVoice',
-    'stopVoice',
-    'uploadVoice',
-    'downloadVoice',
-    'chooseImage',
-    'previewImage',
-    'uploadImage',
-    'downloadImage',
-    'getNetworkType',
-    'openLocation',
-    'getLocation',
-    'hideOptionMenu',
-    'showOptionMenu',
-    'closeWindow',
-    'scanQRCode',
-    'chooseWXPay',
-    'openProductSpecificView',
-    'addCard',
-    'chooseCard',
-    'openCard'
-  ]
-});
+wx.config(WX_CONFIG);
